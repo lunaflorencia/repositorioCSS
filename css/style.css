@@ -1,0 +1,27 @@
+.grid-container{
+    display: grid;
+    grid-template-rows: 350px ;
+    grid-template-columns: [c0] 2fr [c1] 2fr [c3] 2fr [c4] 2fr [c5];
+    align-content: center;
+    column-gap: 15px;
+    margin: 40px;
+}
+
+.grid-item1{
+    background:red;
+  color:yellow;
+  text-align: left;
+  font-size: 40px;
+  grid-column-start:[c0];
+  grid-column-end: [c1];
+  grid-column: [c3]/[c5];
+}
+
+.grid-item2{
+    background: black;
+    color: white;
+    text-align: left;
+    font-size: 40px;
+    grid-column-start: [c1];
+    grid-column-end: [c3];
+}
